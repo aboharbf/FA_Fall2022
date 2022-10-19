@@ -5,7 +5,7 @@ A Repo containing scripts created during 'Python for fMRI Analysis', taught by D
 Stroop Task dataset from OpenNeuro - https://openneuro.org/datasets/ds000164/versions/00001
 Downloaded using aws command line interface. Recommended getting AWS CLI - https://aws.amazon.com/cli/, and running
 
-'''
+'''python
 aws s3 sync --no-sign-request s3://openneuro.org/ds000164 ds000164-download/
 '''
 
@@ -14,7 +14,7 @@ Pipeline developed on Windows 11 system using Ubuntu 18 on Windows Subsystem Lin
 Software run in Conda environment w/ Nipype, fslpy (fMRI_Conda.yml environment file present can recreate)
 - Install Anaconda (Anaconda3-2022.10-Linux-x86_64.sh used in WSL here)
 
-'''
+'''python
 conda env create -f fMRI_Conda.yml
 '''
 
